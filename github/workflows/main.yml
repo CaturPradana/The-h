@@ -1,17 +1,1 @@
-# .github/workflows/main.yml
 
-on: push
-
-jobs:
-  backfill-commits:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-    - uses: bcanseco/github-contribution-graph-action@v2
-      env:
-        GITHUB_TOKEN: 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
-        GIT_EMAIL: prysip446@bangban.uk # replace me
-        MAX_DAYS: 365
-        MIN_COMMITS_PER_DAY: 1
-        MAX_COMMITS_PER_DAY: 1
